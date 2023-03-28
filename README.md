@@ -1,12 +1,2 @@
-2023.3.26
-本项目拟提供的功能有：
-1. 通过对每天热门的1000个视频的tag进行分析，得到推送权重占比最大的tags，利用K-means算法将不同tags对应的播放量和点赞数综合进行列表。通过k-means算法将其聚类为三类——高质量Tag、中等权重tag、低创tag
-2. 通过对视频分区统计，同样用K-means算法对其进行筛选分类
-3. 对食品播放量进行主成分分析(暂定)
-4. 对评论区进行情感分析(暂定)
-5. 将会含有三个函数，负责整体的数据处理，以及两个函数，负责对视频的tag进行处理，以及对视频的分区进行处理。
-6. 数据处理包括将CSV文件提出，获取为对应DataFrame，然后进行数据清洗，将参数以列表或者字典的方式传递给后续函数。
-7. 通过对视频的tag进行处理，将其进行分类，然后将其以列表的形式返回。
-8. 通过对视频的分区进行处理，将其进行分类，然后将其以列表的形式返回。
-9. 在获得了全部的信息后，将会有一个主成分分析函数文件，一个K-means文件对其进行分析和处理
-10. B站的权重视频权重=硬币x0.4+收藏x0.3+弹幕x0.4+评论x0.4+播放x0.25+点赞x0.4+分享x0.6，最新视频(一天内发布）提权\[总值*1.5]
+对B站视频数据进行K-means聚类，其中数据集是自己爬出来的，如果要用自己的数据集，可能要修改代码，数据集在我的release里有放，我是python新手，刚开始接触数据分析。
+K-means clustering of B station video data, where the dataset is crawled out by itself, if you want to use your own data set, you may have to modify the code, the data set is put in my release, I am a python newbie, just starting to contact data analysis.
